@@ -3,37 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopify</title>
-    
-      <h1><u><i>SHOPIFY ONLINE SHOP</i></u></h1>
+    <title>Spotishop - Music Gear & Merch Store Kenya</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:Arial,sans-serif;background:#f9f9f9;color:#111;line-height:1.6}
+        header{background:#000;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+        .logo{color:#1DB954;font-weight:bold;font-size:1.8rem} .logo span{color:#fff}
+        nav a{color:#fff;text-decoration:none;margin-left:1.2rem;text-transform:uppercase;font-size:0.85rem}
+        nav a:hover{color:#1DB954}
+        main{max-width:1100px;margin:auto}
+        section{background:#fff;margin:1.5rem;padding:2rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+        .hero{background:#121212;color:#fff;text-align:center;padding:4rem 2rem}
+        .hero h1{font-size:2.8rem}
+        .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+        .card{border:1px solid #eee;border-radius:8px;padding:1rem;text-align:center}
+        .card img{width:100%;height:150px;object-fit:cover;border-radius:6px}
+        .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1rem}
+        .gallery img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+        ul, ol{margin-left:1.5rem;margin-top:0.5rem}
+        form{display:grid;gap:12px;max-width:600px}
+        input, select, textarea{padding:10px;border:1px solid #ccc;border-radius:6px;width:100%}
+        button.submit{background:#1DB954;color:#fff;border:none;padding:12px;border-radius:25px;font-weight:bold;cursor:pointer}
+        footer{background:#000;color:#888;text-align:center;padding:2rem;margin-top:2rem}
+        aside{background:#e8f5e9;border-left:4px solid #1DB954;padding:1rem;margin-top:1rem}
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">gallary</a>
-        <a href="#">contact</a>
-    </nav>
-  
-    <section class="hero">
-        <h2><p>welcome to our shopify - music and lifestyle shop</p></h2>
-    </section>
-    <section style="padding:2rem; text-align:center;">
-    <h2>Best Sellers in Kenya</h2>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.5rem;">
-        
-        <div style="background:white; padding:1rem; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-            <div style="background:#eee; height:120px; font-size:2.5rem; display:flex; align-items:center; justify-content:center; border-radius:6px;">
-                <img src="https://i.pinimg.com/236x/03/9a/3c/039a3c1b56b82f1a0c48178c8c6e6a9c.jpg" alt="heaphones"></div>
-            <h4 style="margin:10px 0 5px 0;">
-            </h4>
-            <p style="color:#1DB954; font-weight:bold;">KSh 16,500</p>
-            <p style="font-size:0.8rem; color:gray;"><del>KSh 19,000</del></p>
-            <button style="margin-top:8px; width:100%; padding:8px; background:#111; color:white; border:none; border-radius:20px;">Add to Cart</button>
-        </div>
+    <!-- 1. HEADER + 2. NAV -->
+    <header>
+        <div class="logo">Spoti<span>shop</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="https://open.spotify.com" target="_blank">Spotify ↗️</a>
+        </nav>
+    </header>
 
-        <div style="background:white; padding:1rem; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-            <div style="background:#eee; height:120px; font-size:2.5rem; display:flex; align-items:center; justify-content:center; border-radius:6px;"></div>
-    
+    <main>
+        <!-- SECTION 1: HOME / HERO -->
+        <section id="home" class="hero">
+            <h1>SHOPIFY ONLINE SHOP - SPOTISHOP KENYA</h1>
+            <h2>Music Gear You Can Own</h2>
+            <p>Best music store in Nairobi with M-Pesa payment and next-day delivery.</p>
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400" alt="Headphones on a table in a music studio" style="width:300px;border-radius:10px;margin-top:1rem;">
+        </section>
+
+        <!-- SECTION 2: PRODUCTS -->
+        <section id="products">
+            <h2>Featured Products</h2>
+            <h3>Best Sellers in KSH</h3>
+            <div class="products">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400" alt="Black wireless studio headphones">
+                    <h3>Studio Headphones Pro</h3>
+                    <p>Noise cancelling deep bass. Perfect for producers.</p>
+                    <p><strong>KSh 16,500</strong></p>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400" alt="Vinyl record player playing a record">
+                    <h3>Classic Vinyl</h3>
+                    <p>Limited edition 180g vinyl collection.</p>
+                    <p><strong>KSh 4,500</strong></p>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="Black t-shirt with music print">
+                    <h3>Artist Merch Tee</h3>
+                    <p>100% cotton, free delivery in Nairobi.</p>
+                    <p><strong>KSh 2,800</strong></p>
+                </article>
+            </div>
+
+            <aside>
+                <h3>Why Choose Spotishop?</h3>
+                <ul>
+                    <li>Fast delivery across Kenya</li>
+                    <li>Secure M-Pesa & Card Payment</li>
+                    <li>Quality original products</li>
+                </ul>
+            </aside>
+
+            <h3>How to Order</h3>
+            <ol>
+                <li>Browse products</li>
+                <li>Add to cart</li>
+                <li>Checkout with M-Pesa</li>
+            </ol>
+        </section>
+
+        <!-- SECTION 3: ABOUT -->
+        <section id="about">
+            <h2>About Spotishop</h2>
+            <p>Spotishop is inspired by Spotify. We believe music should not just be streamed but owned. We sell gear for true fans.</p>
+            <p>Founded in 2026 in Nairobi as a class project, now serving music lovers countrywide.</p>
+        </section>
+
+        <!-- SECTION 4: GALLERY - 6 IMAGES GRID -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Our store and community</p>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400" alt="Person wearing headphones listening to music">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400" alt="Guitar on stage with lights">
+                <img src="https://images.unsplash.com/photo-1514320290767-3d0e0f7f1e58?w=400" alt="Crowd at a music concert">
+                <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=400" alt="Vinyl records stacked in a crate">
+                <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400" alt="DJ mixing music at a party">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="White headphones on yellow background">
+            </div>
+        </section>
+
+        <!-- SECTION 5: CONTACT + FORM -->
+        <section id="contact">
+            <h2>Contact & Order Form</h2>
+            <p>Fill this form to order or join our fan club</p>
+            
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Brian Otieno" required minlength="3" maxlength="50">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" placeholder="At least 8 characters" required minlength="8">
+
+                <label>Favorite Category:</label>
+                <div>
+                    <input type="radio" id="vinyl" name="category" value="vinyl" required> <label for="vinyl">Vinyl</label>
+                    <input type="radio" id="gear" name="category" value="gear"> <label for="gear">Gear</label>
+                    <input type="radio" id="merch" name="category" value="merch"> <label for="merch">Merch</label>
+                </div>
+
+                <label>Payment Method (you can choose more):</label>
+                <div>
+                    <input type="checkbox" id="mpesa" name="payment" value="mpesa"> <label for="mpesa">M-Pesa</label>
+                    <input type="checkbox" id="card" name="payment" value="card"> <label for="card">Card</label>
+                </div>
+
+                <label for="location">Delivery Location:</label>
+                <select id="location" name="location" required>
+                    <option value="">-- Select Town --</option>
+                    <option value="nairobi">Nairobi</option>
+                    <option value="mombasa">Mombasa</option>
+                    <option value="kisumu">Kisumu</option>
+                    <option value="nakuru">Nakuru</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us what you want to order..." required minlength="10"></textarea>
+
+                <button type="submit" class="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Spotishop Kenya. All rights reserved.</p>
+        <p><a href="about.html" style="color:#1DB954;">About Page</a> | <a href="https://www.spotify.com/ke/" target="_blank" style="color:#1DB954;">Visit Spotify KE (external)</a></p>
+    </footer>
 </body>
 </html>
